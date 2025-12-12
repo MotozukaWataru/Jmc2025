@@ -1,0 +1,839 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ja">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>『三五要録』催馬楽《本滋》整形XML</title>
+        <title type="song" n="47" xml:id="SGYR04_047">本滋</title>
+        <respStmt>
+          <resp>翻刻・TEI/XMLエンコード</resp>
+          <name xml:id="motozuka">本塚亘</name>
+        </respStmt>
+        <funder>法政大学 若手研究者共同研究プロジェクト（助成）</funder>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>本塚亘</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2025-12-13">2025/12/13</date>
+        <availability status="restricted">
+          <p>翻刻データの公開にあたって宮内庁書陵部長の許可を得ている。二次利用に際しては宮内庁書陵部の条件に従うこと。</p>
+        </availability>
+        <idno type="url">https://saibara-wiki.jp/jmc2025/</idno>
+        <idno type="version">v0.9.0（JMC2025） </idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="volume" n="0004">
+          <title>三五要録</title>
+          <editor>藤原師長</editor>
+          <respStmt>
+            <resp>伝承書写者</resp>
+            <name>花山院長雅</name>
+          </respStmt>
+          <date type="work" notAfter="1192">12世紀末</date>
+          <date type="manuscript" notBefore="1185" notAfter="1333">鎌倉時代</date>
+          <idno type="shelfmark">伏 ・ 931</idno>
+          <idno type="item">0004</idno>
+          <idno type="url">https://shoryobu.kunaicho.go.jp/Toshoryo/Viewer/1000684030004/?p=44</idno>
+          <note>宮内庁書陵部蔵伏見宮家旧蔵本。</note>
+          <note>「書陵部所蔵資料目録・画像公開システム」による『三五要録』巻第四の影印。</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>法政大学「若手研究者共同研究プロジェクト」（2024年度～2026年度）「催馬楽古楽譜の電子テキスト構築と活用の実践」による研究の一環として作成した。</p>
+        <p>人文科学とコンピュータシンポジウム（じんもんこん2025、於九州大学伊都キャンパス）で行われる口頭発表、および論文にて紹介。</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>整形XML：書誌XMLを元にし，Python で XSLT をあてて自動生成する。</p>
+        <p>利用した XSLT は以下の 7 つ。</p>
+        <p>- 0_preprocess.xslt（整理・並び替え）</p>
+        <p>- 1_seg_cycle.xslt（百ごとに区切る）</p>
+        <p>- 2_seg_multi.xslt（楽句点ごとに区切る）</p>
+        <p>- 3_seg_unit.xslt（琵琶の一撥絃単位で区切る）</p>
+        <p>- 4_technique.xslt（琵琶の基本奏法に関する調整）</p>
+        <p>- 5_exception.xslt（例外処理）</p>
+        <p>- 6_information.xslt（整形XML、曲に関する情報付与）</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="mode">
+          <category xml:id="ritsu">
+            <catDesc>律</catDesc>
+          </category>
+          <category xml:id="ryo">
+            <catDesc>呂</catDesc>
+          </category>
+        </taxonomy>
+        <taxonomy xml:id="meter">
+          <category xml:id="sandobyoshi">
+            <catDesc>三度拍子</catDesc>
+          </category>
+          <category xml:id="gohyoshi">
+            <catDesc>五拍子</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+      <textClass>
+        <catRef target="#ryo #sandobyoshi"/>
+        <keywords>
+          <term>雅楽</term>
+          <term>催馬楽</term>
+          <term>雅楽譜</term>
+          <term>琵琶譜</term>
+          <term>呂歌</term>
+          <term>本滋</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2025-12-13" who="#motozuka" n="0.9.0">初公開（じんもんこん2025発表版）</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="piece" corresp="#SGYR04_047" ana="#ryo #sandobyoshi">
+        <head>
+          <title>本滋</title>
+          <note type="title_note">二段　拍子各十　合拍子廿　一説二段　拍子各五　合拍子十</note>
+        </head>
+        <div type="movement">
+          <ab>
+            <seg type="cycle" n="0">
+              <seg type="multi">
+                <seg type="unit" function="tataku">
+                  <metamark>・</metamark>
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                  <note>モ</note>
+                </seg>
+                <seg type="unit">
+                  <metamark>引</metamark>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="1">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>一</g>
+                  <note>ト</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>之</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <note>シ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>コ</g>
+                  <note>ケ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>ク</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="2">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>コ</g>
+                  <note>キ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>七</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>丄</g>
+                  <note>モ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="3">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>コ</g>
+                  <note>ト</note>
+                </seg>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <note>シ</note>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>七</g>
+                  <g type="legato">ク</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit" function="tataku">
+                  <metamark>・</metamark>
+                  <g>乙</g>
+                  <g type="legato">下</g>
+                  <g type="legato">乙</g>
+                  <note>ケ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>乙</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>乙</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="4">
+              <seg type="multi">
+                <seg type="unit" function="hazusu">
+                  <metamark>百</metamark>
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <note>キ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>乚</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>下</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>コ</g>
+                  <note>キ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="5">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>ク</g>
+                  <note>ヒ</note>
+                </seg>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>七</g>
+                  <g type="legato">ク</g>
+                  <note>ノ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>コ</g>
+                  <note>ナ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>下</g>
+                  <note>カ</note>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>乙</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="6">
+              <seg type="multi">
+                <seg type="unit" function="hazusu">
+                  <metamark>百</metamark>
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <note>ヤ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>乚</g>
+                  <note>マ</note>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>下</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+                <seg type="unit" function="tataku">
+                  <metamark>・</metamark>
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <g type="legato">下</g>
+                  <note>ム</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="7">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>コ</g>
+                  <note>カ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>ク</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <note>シ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <note>ヨ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>丄</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="8">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>一</g>
+                  <note>リ</note>
+                </seg>
+                <seg type="unit">
+                  <g>之</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+                <seg type="unit" function="tataku">
+                  <metamark>・</metamark>
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                  <note>ム</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="9">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>下</g>
+                  <note>カ</note>
+                </seg>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>乙</g>
+                  <g type="legato">下</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <note>シ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <note>カ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>丄</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="10">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>一</g>
+                  <note>ラ</note>
+                </seg>
+                <seg type="unit">
+                  <g>之</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+              </seg>
+            </seg>
+          </ab>
+        </div>
+        <div type="movement">
+          <head>
+            <title>二段</title>
+            <note type="title_note">与一段同音</note>
+          </head>
+          <ab>
+            <seg type="cycle" n="0">
+              <seg type="multi">
+                <seg type="unit" function="tataku">
+                  <metamark>・</metamark>
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                  <note>ム</note>
+                </seg>
+                <seg type="unit">
+                  <metamark>引</metamark>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="1">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>一</g>
+                  <note>カ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>之</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <note>シ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>コ</g>
+                  <note>カ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>ク</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="2">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>コ</g>
+                  <note>ラ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>七</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>丄</g>
+                  <note>ム</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="3">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>コ</g>
+                  <note>カ</note>
+                </seg>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <note>シ</note>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>七</g>
+                  <g type="legato">ク</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit" function="tataku">
+                  <metamark>・</metamark>
+                  <g>乙</g>
+                  <g type="legato">下</g>
+                  <g type="legato">乙</g>
+                  <note>ヨ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>乙</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>乙</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="4">
+              <seg type="multi">
+                <seg type="unit" function="hazusu">
+                  <metamark>百</metamark>
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <note>リ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>乚</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>下</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>コ</g>
+                  <note>ナ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="5">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>ク</g>
+                  <note>ノ</note>
+                </seg>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <note>フ</note>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>七</g>
+                  <g type="legato">ク</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>コ</g>
+                  <note>リ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>下</g>
+                  <note>コ</note>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>乙</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="6">
+              <seg type="multi">
+                <seg type="unit" function="hazusu">
+                  <metamark>百</metamark>
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <note>メ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>乚</g>
+                  <note>ハ</note>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <g type="legato">下</g>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>下</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+                <seg type="unit" function="tataku">
+                  <metamark>・</metamark>
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <g type="legato">下</g>
+                  <note>イ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="7">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>コ</g>
+                  <note>マ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <g>ク</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <note>ノ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <note>ヨ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>丄</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                  <note>ノ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="8">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>一</g>
+                  <note>タ</note>
+                </seg>
+                <seg type="unit">
+                  <g>之</g>
+                  <note>メ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+                <seg type="unit" function="tataku">
+                  <metamark>・</metamark>
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                  <note>ケ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="9">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>下</g>
+                  <note>フ</note>
+                </seg>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>乙</g>
+                  <g type="legato">下</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="hazusu">
+                  <g>下</g>
+                  <g type="legato">乚</g>
+                  <note>ノ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <note>ヒ</note>
+                </seg>
+                <seg type="unit" subtype="ka">
+                  <metamark>・</metamark>
+                  <g>丄</g>
+                </seg>
+                <metamark>火</metamark>
+                <seg type="unit" subtype="ka" function="tataku">
+                  <g>〻</g>
+                  <g type="legato">七</g>
+                  <g type="legato">〻</g>
+                  <note>ノ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+            </seg>
+            <seg type="cycle" n="10">
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>百</metamark>
+                  <g>一</g>
+                  <note>タ</note>
+                </seg>
+                <seg type="unit">
+                  <g>之</g>
+                  <note>メ</note>
+                </seg>
+              </seg>
+              <metamark>◦</metamark>
+              <seg type="multi">
+                <seg type="unit">
+                  <metamark>・</metamark>
+                  <g>之</g>
+                  <metamark>✓</metamark>
+                </seg>
+                <metamark>一火</metamark>
+              </seg>
+            </seg>
+          </ab>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
