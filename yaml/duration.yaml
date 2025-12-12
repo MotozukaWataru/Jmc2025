@@ -1,0 +1,31 @@
+#【duration.yaml】
+# 音価に関する設定
+
+duration:
+  mei:                  # MEI との互換設定
+    dur_per_unit: 4         # 1 unit を４分音符相当とする。
+
+  musicxml:             # MusicXML との互換設定
+    divisions: 8            # 四分音符を何分割するか（最小単位）
+    duration_per_unit: 8    # 1 unit を8最小単位相当とする。
+
+articulation:         # unit 内の音価の配分
+  divisions: 8          # unit の分割数（最小単位）
+  split:                # 音価配分
+    normal:               # 通常 subtypeなし
+      1: [8]                # <g>譜字1つの場合
+      2: [4, 4]             # <g>譜字2つの場合
+      3: [2, 2, 4]          # <g>譜字3つの場合
+
+    ka:                   # 「火」の前後 subtype="ka" の場合
+      1: [4]                # <g>譜字1つの場合
+      2: [2, 2]             # <g>譜字2つの場合
+      3: [1, 1, 2]          # <g>譜字3つの場合
+      
+    half:                 # 例外処理 subtype="half" の場合
+      1: [4]                # <g>譜字1つの場合
+      2: [2, 2]             # <g>譜字2つの場合
+      3: [1, 1, 2]          # <g>譜字3つの場合
+            
+    double:               # 例外処理 subtype="double" の場合
+      5: [2, 2, 2, 2, 8]    # <g>譜字5つの場合

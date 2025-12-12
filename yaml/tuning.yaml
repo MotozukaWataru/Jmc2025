@@ -1,0 +1,31 @@
+#【tuning.yaml】
+# 琵琶の調絃情報（律／呂）の設定
+
+tuning:
+  ritsu:  # 律
+    name: "Biwa-Oshiki-cho"   # 調絃名：琵琶黄鐘調
+    open_strings:             # 開放絃の音高
+      - { step: "E", octave: 2 }  # 大絃「一」
+      - { step: "B", octave: 2 }  # 二絃「乚」
+      - { step: "E", octave: 3 }  # 三絃「ク」
+      - { step: "A", octave: 3 }  # 子絃「丄」
+    tonic: "E"                  # 主音
+
+  ryo:  # 呂
+    name: "Biwa-henpuko-jo"   # 調絃名：琵琶返風香調
+    open_strings:             # 開放絃の音高
+      - { step: "G", octave: 2 }  # 大絃「一」
+      - { step: "A", octave: 2 }  # 二絃「乚」
+      - { step: "D", octave: 3 }  # 三絃「ク」
+      - { step: "G", octave: 3 }  # 子絃「丄」
+    tonic: "G"                  # 主音
+
+frets:
+  - name: "大絃"
+    positions: { "一": 0, "工": 2, "凢": 3, "フ": 4, "斗": 5 }
+  - name: "二絃"
+    positions: { "乚": 0, "下": 2, "十": 3, "乙": 4, "コ": 5 }
+  - name: "三絃"
+    positions: { "ク": 0, "七": 2, "ヒ": 3, "〻": 4, "之": 5 }
+  - name: "子絃"
+    positions: { "丄": 0, "八": 2, "丨": 3, "ム": 4, "也": 5 }
