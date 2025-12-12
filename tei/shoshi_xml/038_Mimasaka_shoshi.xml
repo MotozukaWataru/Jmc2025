@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ja">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>『三五要録』催馬楽《美作》書誌XML</title>
+        <title type="song" n="38" xml:id="SGYR04_038">美作</title>
+        <respStmt>
+          <resp>翻刻・TEI/XMLエンコード</resp>
+          <name xml:id="motozuka">本塚亘</name>
+        </respStmt>
+        <funder>法政大学 若手研究者共同研究プロジェクト（助成）</funder>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>本塚亘</publisher>
+        <pubPlace>東京</pubPlace>
+        <date when="2025-12-13">2025/12/13</date>
+        <availability status="restricted">
+          <p>翻刻データの公開にあたって宮内庁書陵部長の許可を得ている。二次利用に際しては宮内庁書陵部の条件に従うこと。</p>
+        </availability>
+        <idno type="url">https://saibara-wiki.jp/jmc2025/</idno>
+        <idno type="version">v0.9.0（JMC2025） </idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="volume" n="0004">
+          <title>三五要録</title>
+          <editor>藤原師長</editor>
+          <respStmt>
+            <resp>伝承書写者</resp>
+            <name>花山院長雅</name>
+          </respStmt>
+          <date type="work" notAfter="1192">12世紀末</date>
+          <date type="manuscript" notBefore="1185" notAfter="1333">鎌倉時代</date>
+          <idno type="shelfmark">伏 ・ 931</idno>
+          <idno type="item">0004</idno>
+          <idno type="url">https://shoryobu.kunaicho.go.jp/Toshoryo/Viewer/1000684030004/?p=35</idno>
+          <note>宮内庁書陵部蔵伏見宮家旧蔵本。</note>
+          <note>「書陵部所蔵資料目録・画像公開システム」による『三五要録』巻第四の影印。</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>法政大学「若手研究者共同研究プロジェクト」（2024年度～2026年度）「催馬楽古楽譜の電子テキスト構築と活用の実践」による研究の一環として作成した。</p>
+        <p>人文科学とコンピュータシンポジウム（じんもんこん2025、於九州大学伊都キャンパス）で行われる口頭発表、および論文にて紹介。</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>翻刻範囲は楽譜本文のうち、各曲の第一説のみを対象とし、各曲異説および異説注記、その他の注記については翻刻していない。</p>
+        <p>※試作中につきまだ改行位置（lb）を反映していない</p>
+        <p>書誌XML：原資料の行区切り・書誌単位を重視し、音符や拍子記号は簡略なメタマークにとどめる。</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="mode">
+          <category xml:id="ritsu">
+            <catDesc>律</catDesc>
+          </category>
+          <category xml:id="ryo">
+            <catDesc>呂</catDesc>
+          </category>
+        </taxonomy>
+        <taxonomy xml:id="meter">
+          <category xml:id="sandobyoshi">
+            <catDesc>三度拍子</catDesc>
+          </category>
+          <category xml:id="gohyoshi">
+            <catDesc>五拍子</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ja">日本語</language>
+      </langUsage>
+      <textClass>
+        <catRef target="#ryo #sandobyoshi" />
+        <keywords>
+          <term>雅楽</term>
+          <term>催馬楽</term>
+          <term>雅楽譜</term>
+          <term>琵琶譜</term>
+          <term>呂歌</term>
+          <term>美作</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2025-12-13" who="#motozuka" n="0.9.0">初公開（じんもんこん2025発表版）</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="piece" corresp="#SGYR04_038">
+        <head>
+          <title>美作</title>
+          <note type="title_note">二段　拍子各八　合拍子十六　貞観主基風俗也　藤生野同音</note>
+        </head>
+        <div type="movement">
+          <ab>
+            <metamark place="right" rend="red">百</metamark>
+            <g>コ</g>
+            <note>ミ</note>
+            <g>ク</g>
+            <note>マ</note>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>乙</g>
+            <note>サ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <g>乙</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>コ</g>
+            <note>カ</note>
+            <metamark place="right">・</metamark>
+            <g>ク</g>
+            <note>ヤ</note>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right" rend="red">百</metamark>
+            <g>コ</g>
+            <note>ク</note>
+            <g>ク</g>
+            <note>メ</note>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>〻</g>
+            <hi rend="sub">  
+              <g>七</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>コ</g>
+            <note>ノ</note>
+            <metamark place="right">・</metamark>
+            <g>ク</g>
+            <hi rend="sub">
+              <metamark rend="red">一</metamark>
+            </hi>
+            <metamark place="right" rend="red">百</metamark>
+            <g>コ</g>
+            <note>ク</note>
+            <g>ク</g>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>乙</g>
+            <note>メ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <g>乙</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>乚</g>
+            <note>ノ</note>
+            <hi rend="sub">  
+              <g>下</g>
+            </hi>
+            <metamark place="right">・</metamark>
+            <metamark>┌</metamark>
+            <g>乚</g>
+            <metamark>┐</metamark>
+            <g>ク</g>
+            <note>サ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <metamark>火</metamark>
+            </hi>
+            <g>下</g>
+            <hi rend="sub">  
+              <g>乚</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right" rend="red">百</metamark>
+            <g>一</g>
+            <note>ラ</note>
+            <g>之</g>
+            <note>ヤ</note>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>ム</g>
+            <hi rend="sub">  
+              <g>八</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>之</g>
+            <note>マ</note>
+            <metamark place="right">・</metamark>
+            <g>丄</g>
+            <hi rend="sub">
+              <metamark rend="red">一</metamark>
+            </hi>
+            <metamark place="right" rend="red">百</metamark>
+            <g>下</g>
+            <note>サ</note>
+            <g>乙</g>
+            <note>ラ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <metamark>火</metamark>
+            </hi>
+            <g>下</g>
+            <note>サ</note>
+            <hi rend="sub">  
+              <g>乚</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>乚</g>
+            <note>ラ</note>
+            <hi rend="sub">  
+              <g>下</g>
+            </hi>
+            <metamark place="right">・</metamark>
+            <metamark>┌</metamark>
+            <g>乚</g>
+            <metamark>┐</metamark>
+            <g>ク</g>
+            <note>ニ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <metamark>火</metamark>
+            </hi>
+            <g>下</g>
+            <hi rend="sub">  
+              <g>乚</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right" rend="red">百</metamark>
+            <g>一</g>
+            <note>ナ</note>
+            <g>之</g>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>〻</g>
+            <note>ヨ</note>
+            <hi rend="sub">  
+              <g>七</g>  
+              <g>〻</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>コ</g>
+            <note>ヤ</note>
+            <metamark place="right">・</metamark>
+            <g>ク</g>
+            <hi rend="sub">
+              <metamark rend="red">一</metamark>
+            </hi>
+            <metamark place="right" rend="red">百</metamark>
+            <g>〻</g>
+            <note>サ</note>
+            <hi rend="sub">  
+              <g>七</g>  
+              <g>〻</g>
+            </hi>
+            <g>丄</g>
+            <note>ラ</note>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>〻</g>
+            <note>サ</note>
+            <hi rend="sub">  
+              <g>七</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>之</g>
+            <note>ラ</note>
+            <metamark place="right">・</metamark>
+            <g>丄</g>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>八</g>
+            <note>ニ</note>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right" rend="red">百</metamark>
+            <g>ム</g>
+            <note>ナ</note>
+            <hi rend="sub">  
+              <g>八</g>
+            </hi>
+            <g>一</g>
+            <note>ヨ</note>
+            <g>之</g>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>之</g>
+            <metamark place="overlap">✓</metamark>
+            <note>ヤ</note>
+            <metamark place="right">・</metamark>
+            <hi rend="sub">  
+              <metamark>引</metamark>
+            </hi>
+            <hi rend="sub">
+              <metamark rend="red">一</metamark>
+            </hi>
+          </ab>
+        </div>
+        <div type="movement">
+          <head>
+            <title>二段</title>
+            <note type="title_note">与一段同音</note>
+          </head>
+          <ab>
+            <metamark place="right" rend="red">百</metamark>
+            <g>コ</g>
+            <note>サ</note>
+            <g>ク</g>
+            <note>ラ</note>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>乙</g>
+            <note>サ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <g>乙</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>コ</g>
+            <note>ラ</note>
+            <metamark place="right">・</metamark>
+            <g>ク</g>
+            <note>ニ</note>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right" rend="red">百</metamark>
+            <g>コ</g>
+            <note>ワ</note>
+            <g>ク</g>
+            <note>カ</note>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>〻</g>
+            <hi rend="sub">  
+              <g>七</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>コ</g>
+            <note>ナ</note>
+            <metamark place="right">・</metamark>
+            <g>ク</g>
+            <hi rend="sub">
+              <metamark rend="red">一</metamark>
+            </hi>
+            <metamark place="right" rend="red">百</metamark>
+            <g>コ</g>
+            <note>ワ</note>
+            <g>ク</g>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>乙</g>
+            <note>カ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <g>乙</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>乚</g>
+            <note>ナ</note>
+            <hi rend="sub">  
+              <g>下</g>
+            </hi>
+            <metamark place="right">・</metamark>
+            <metamark>┌</metamark>
+            <g>乚</g>
+            <metamark>┐</metamark>
+            <g>ク</g>
+            <note>ハ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <metamark>火</metamark>
+            </hi>
+            <g>下</g>
+            <hi rend="sub">  
+              <g>乚</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right" rend="red">百</metamark>
+            <g>一</g>
+            <note>タ</note>
+            <g>之</g>
+            <note>エ</note>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>ム</g>
+            <hi rend="sub">  
+              <g>八</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>之</g>
+            <note>シ</note>
+            <metamark place="right">・</metamark>
+            <g>丄</g>
+            <hi rend="sub">
+              <metamark rend="red">一</metamark>
+            </hi>
+            <metamark place="right" rend="red">百</metamark>
+            <g>下</g>
+            <note>ヨ</note>
+            <g>乙</g>
+            <note>ロ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <metamark>火</metamark>
+            </hi>
+            <g>下</g>
+            <note>ツ</note>
+            <hi rend="sub">  
+              <g>乚</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>乚</g>
+            <note>ヨ</note>
+            <hi rend="sub">  
+              <g>下</g>
+            </hi>
+            <metamark place="right">・</metamark>
+            <metamark>┌</metamark>
+            <g>乚</g>
+            <metamark>┐</metamark>
+            <g>ク</g>
+            <note>マ</note>
+            <hi rend="sub">  
+              <g>下</g>  
+              <metamark>火</metamark>
+            </hi>
+            <g>下</g>
+            <hi rend="sub">  
+              <g>乚</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right" rend="red">百</metamark>
+            <g>一</g>
+            <note>テ</note>
+            <g>之</g>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>〻</g>
+            <note>ニ</note>
+            <hi rend="sub">  
+              <g>七</g>  
+              <g>〻</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>コ</g>
+            <note>ヤ</note>
+            <metamark place="right">・</metamark>
+            <g>ク</g>
+            <hi rend="sub">
+              <metamark rend="red">一</metamark>
+            </hi>
+            <metamark place="right" rend="red">百</metamark>
+            <g>〻</g>
+            <note>ヨ</note>
+            <hi rend="sub">  
+              <g>七</g>  
+              <g>〻</g>
+            </hi>
+            <g>丄</g>
+            <note>ロ</note>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>〻</g>
+            <note>ツ</note>
+            <hi rend="sub">  
+              <g>七</g>
+            </hi>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>之</g>
+            <note>ヨ</note>
+            <metamark place="right">・</metamark>
+            <g>丄</g>
+            <hi rend="sub">  
+              <metamark>火</metamark>
+            </hi>
+            <g>八</g>
+            <note>マ</note>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right" rend="red">百</metamark>
+            <g>ム</g>
+            <note>テ</note>
+            <hi rend="sub">  
+              <g>八</g>
+            </hi>
+            <g>一</g>
+            <note>ニ</note>
+            <g>之</g>
+            <metamark rend="red">◦</metamark>
+            <metamark place="right">・</metamark>
+            <g>之</g>
+            <metamark place="overlap">✓</metamark>
+            <note>ヤ</note>
+            <metamark place="right">・</metamark>
+            <hi rend="sub">  
+              <metamark>引</metamark>
+            </hi>
+            <hi rend="sub">
+              <metamark rend="red">一</metamark>
+            </hi>
+          </ab>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
