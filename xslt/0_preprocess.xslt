@@ -9,7 +9,7 @@
     <xsl:strip-space elements="*"/>
   
     <!--
-       20251214: 書誌XMLv0.9.1以降、原本に楽句点が無い曲について、では補入を <supplied> で明示するようにした。
+       20251214: 書誌XMLv0.9.1以降、原本に楽句点が無い曲については補入を <supplied> で明示するようにした。
        このpreprocessでは、後続XSLT/Pythonとの互換維持のため <supplied> を剥がして従来どおり <metamark> に正規化する。
     -->
   
