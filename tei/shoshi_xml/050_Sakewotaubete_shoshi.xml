@@ -19,7 +19,7 @@
           <p>翻刻データの公開にあたって宮内庁書陵部長の許可を得ている。二次利用に際しては宮内庁書陵部の条件に従うこと。</p>
         </availability>
         <idno type="url">https://saibara-wiki.jp/jmc2025/</idno>
-        <idno type="version">v0.9.0（JMC2025） </idno>
+        <idno type="version">v0.9.1（JMC2025）</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="volume" n="0004">
@@ -48,6 +48,7 @@
         <p>翻刻範囲は楽譜本文のうち、各曲の第一説のみを対象とし、各曲異説および異説注記、その他の注記については翻刻していない。</p>
         <p>※試作中につきまだ改行位置（lb）を反映していない</p>
         <p>書誌XML：原資料の行区切り・書誌単位を重視し、音符や拍子記号は簡略なメタマークにとどめる。</p>
+        <p>※我門乎・大路・老鼠・酒飲・蓑山・眉止自女・田中井戸・無力蝦は原本に楽句点がないが、分析上の便宜として暫定的に補入した。</p>
       </editorialDecl>
       <classDecl>
         <taxonomy xml:id="mode">
@@ -73,7 +74,7 @@
         <language ident="ja">日本語</language>
       </langUsage>
       <textClass>
-        <catRef target="#ryo #gohyoshi" />
+        <catRef target="#ryo #gohyoshi"/>
         <keywords>
           <term>雅楽</term>
           <term>催馬楽</term>
@@ -86,6 +87,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2025-12-13" who="#motozuka" n="0.9.0">初公開（じんもんこん2025発表版）</change>
+      <change when="2025-12-13" who="#motozuka" n="0.9.1">原本に楽句点がない曲について、補入の注記を追加</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -103,7 +105,9 @@
             <hi rend="sub">  
               <metamark>引</metamark>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>乙</g>
             <note>ケ</note>
@@ -116,7 +120,9 @@
             <hi rend="sub">  
               <g>乚</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>乙</g>
             <note>タ</note>
@@ -128,13 +134,17 @@
               <metamark>引</metamark>
             </hi>
             <note>ウ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>コ</g>
             <note>ヘ</note>
             <g>ク</g>
             <note>テ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right" rend="red">百</metamark>
             <g>七</g>
             <note>タ</note>
@@ -143,7 +153,9 @@
             <hi rend="sub">  
               <g>七</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>コ</g>
             <note>ヱ</note>
@@ -153,7 +165,9 @@
             <hi rend="sub">  
               <g>下</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <metamark>┌</metamark>
             <g>コ</g>
@@ -163,7 +177,9 @@
             <hi rend="sub">  
               <metamark>引</metamark>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>コ</g>
             <g>ク</g>
@@ -178,7 +194,9 @@
             </hi>
             <g>コ</g>
             <note>フ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>七</g>
             <note>ト</note>
@@ -189,7 +207,9 @@
             <metamark place="right">・</metamark>
             <g>丄</g>
             <note>コ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>之</g>
             <note>リ</note>
@@ -200,13 +220,17 @@
             <hi rend="sub">  
               <metamark>引</metamark>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>乚</g>
             <note>ソ</note>
             <g>八</g>
             <note>ヤ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right" rend="red">百</metamark>
             <g>ム</g>
             <note>マ</note>
@@ -215,7 +239,9 @@
             <hi rend="sub">  
               <g>ム</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>八</g>
             <note>テ</note>
@@ -226,14 +252,18 @@
               <g>〻</g>  
               <g>之</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>八</g>
             <note>ル</note>
             <hi rend="sub">  
               <metamark>引</metamark>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>乚</g>
             <g>八</g>
@@ -250,14 +280,18 @@
             <hi rend="sub">  
               <metamark>引</metamark>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>コ</g>
             <note>ロ</note>
             <metamark place="right">・</metamark>
             <g>ク</g>
             <note>ホ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>コ</g>
             <note>ヒ</note>
@@ -265,7 +299,9 @@
             <hi rend="sub">  
               <g>下</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>乙</g>
             <note>ソ</note>
@@ -277,7 +313,9 @@
             <hi rend="sub">  
               <g>乚</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right" rend="red">百</metamark>
             <g>乚</g>
             <note>マ</note>
@@ -287,7 +325,9 @@
               <g>乚</g>  
               <g>下</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>下</g>
             <note>テ</note>
@@ -297,14 +337,18 @@
             <metamark place="right">・</metamark>
             <g>一</g>
             <note>ク</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>之</g>
             <note>ル</note>
             <hi rend="sub">  
               <metamark>引</metamark>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>之</g>
             <metamark place="overlap">✓</metamark>
@@ -314,7 +358,9 @@
             </hi>
             <g>下</g>
             <note>タ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right" rend="red">百</metamark>
             <g>乙</g>
             <note>リ</note>
@@ -325,14 +371,18 @@
             <hi rend="sub">  
               <metamark>引</metamark>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>コ</g>
             <note>タン</note>
             <metamark place="right">・</metamark>
             <g>ク</g>
             <note>ナ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>コ</g>
             <note>チ</note>
@@ -341,7 +391,9 @@
             <hi rend="sub">  
               <g>下</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>乙</g>
             <note>ヤ</note>
@@ -353,7 +405,9 @@
             <hi rend="sub">  
               <g>乚</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right" rend="red">百</metamark>
             <g>乚</g>
             <note>タ</note>
@@ -363,7 +417,9 @@
               <g>乚</g>  
               <g>下</g>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>下</g>
             <note>リ</note>
@@ -373,14 +429,18 @@
             <metamark place="right">・</metamark>
             <g>一</g>
             <note>ラ</note>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>之</g>
             <note>ラ</note>
             <hi rend="sub">  
               <metamark>引</metamark>
             </hi>
-            <metamark rend="red">◦</metamark>
+            <supplied reason="analysis" resp="#motozuka">
+              <metamark rend="red">◦</metamark>
+            </supplied>
             <metamark place="right">・</metamark>
             <g>之</g>
             <g>丄</g>
