@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
     version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -7,7 +7,12 @@
     
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     <xsl:strip-space elements="*"/>
-    
+  
+    <!--
+       20251214: 書誌XMLv0.9.1以降、原本に楽句点が無い曲について、では補入を <supplied> で明示するようにした。
+       このpreprocessでは、後続XSLT/Pythonとの互換維持のため <supplied> を剥がして従来どおり <metamark> に正規化する。
+    -->
+  
     <!--
     【0_preprocess.xslt の目的】
 
@@ -37,7 +42,12 @@
     
     <!-- [2] <metamark> の配置情報 @rend / @place を削除 -->
     <xsl:template match="tei:metamark/@rend | tei:metamark/@place"/>
-    
+  
+    <!-- [2-補] <supplied> をトル。中身をそのまま出力して、従来の構造に揃える。-->
+    <xsl:template match="tei:supplied[tei:metamark]">
+      <xsl:apply-templates select="node()"/>
+    </xsl:template>
+  
     <!--
     [3] 拍子記号の統合
         <metamark>一</metamark> に続けて <metamark>火</metamark> が来る場合、
@@ -86,11 +96,9 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <!-- ==============================
-       [6] 歌詞と小譜字・拍子記号の並び替え
-       ============================== -->
-       
     <!--
+    [6] 歌詞と小譜字・拍子記号の並び替え
+       
        後続の segmentation（例：<seg type="unit">）で扱いやすいように、
        1 unit の内部での出現順をそろえる。
     
@@ -127,6 +135,3 @@
     <xsl:template match="tei:hi[@rend='sub'][preceding-sibling::*[1][self::tei:note]]"/>
     
 </xsl:stylesheet>
-
-
-
