@@ -160,14 +160,12 @@
             </seg>
             <seg type="cycle" n="2">
               <seg type="multi">
-                <seg type="unit" function="tataku">
+                <seg type="unit" function="tataku" subtype="double">
                   <metamark>百</metamark>
                   <g>下</g>
                   <g type="legato">乚</g>
                   <g type="legato">下</g>
-                </seg>
-                <seg type="unit" function="hazusu">
-                  <g>乚</g>
+                  <g type="legato">乚</g>
                   <g type="legato">下</g>
                 </seg>
               </seg>
@@ -858,13 +856,11 @@
               </seg>
               <metamark>◦</metamark>
               <seg type="multi">
-                <seg type="unit" function="hazusu">
+                <seg type="unit" function="tataku" subtype="double">
                   <metamark>・</metamark>
                   <g>下</g>
                   <g type="legato">乚</g>
-                </seg>
-                <seg type="unit" function="tataku">
-                  <g>下</g>
+                  <g type="legato">下</g>
                   <g type="legato">乚</g>
                   <g type="legato">下</g>
                 </seg>
